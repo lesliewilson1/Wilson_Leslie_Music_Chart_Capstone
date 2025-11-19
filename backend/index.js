@@ -1,14 +1,16 @@
 import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import { spotifyToken } from './routes/token.js';
-//----------------------------------Configuration----------------------------------------//
+//----------------------------------Configuration--------------------------------------------------//
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000
+app.use(cors())
 // await mongoose.connect (process.env.ATLAS_URI)
 
-//----------------------------------Routes-----------------------------------------------//
+//----------------------------------Routes---------------------------------------------------------//
 
 
 app.get('/', (req, res) => {
@@ -31,7 +33,7 @@ app.get('/tracks', async (req, res) => {
 
 
 
-//-------------------------------------Listening-----------------------------------------//
+//-------------------------------------Listening---------------------------------------------------//
 
 app.listen(port, () => {
   console.log('Listening Port: ' + port);
