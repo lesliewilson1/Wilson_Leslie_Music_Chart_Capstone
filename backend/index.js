@@ -3,13 +3,12 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './db.js';
-import { spotifyToken } from './routes/token.js';
+import { spotifyToken } from './token.js';
 //----------------------------------Configuration--------------------------------------------------//
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000
 app.use(cors())
-// await mongoose.connect (process.env.ATLAS_URI)
 
 //----------------------------------Routes---------------------------------------------------------//
 
