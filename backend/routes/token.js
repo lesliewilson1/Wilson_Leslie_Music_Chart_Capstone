@@ -2,6 +2,8 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 dotenv.config();
 
+//Token reset for Spotify API
+
 let cachedToken = null;
 let tokenExpires = 0
 

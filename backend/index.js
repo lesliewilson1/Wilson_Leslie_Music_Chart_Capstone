@@ -2,6 +2,7 @@ import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import connectDB from './db.js';
 import { spotifyToken } from './routes/token.js';
 //----------------------------------Configuration--------------------------------------------------//
 dotenv.config();
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
   res.json('Server Working');
 });
 
+//----------------------------------3rd Party API Route----------------------------------------------//
 
 app.get('/tracks', async (req, res) => {
 
@@ -36,5 +38,6 @@ app.get('/tracks', async (req, res) => {
 //-------------------------------------Listening---------------------------------------------------//
 
 app.listen(port, () => {
-  console.log('Listening Port: ' + port);
+  console.log('Listening Port: ', port);
+  connectDB()
 });
