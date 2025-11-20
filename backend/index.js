@@ -4,17 +4,42 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDB from './db.js';
 import { spotifyToken } from './token.js';
+import Track from './models/Track.js';
 //----------------------------------Configuration--------------------------------------------------//
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000
 app.use(cors())
+app.use(express.json())
 
 //----------------------------------Routes---------------------------------------------------------//
 
-
+//Main route
 app.get('/', (req, res) => {
   res.json('Server Working');
+});
+
+//-----------------------------------Get Routes-------------------------------------------//
+
+//Get all post track requests
+app.get('/trackrequest', async (req,res) => {
+    const results = await Track.find({})
+    res.json(results)
+});
+
+//-----------------------------------Post Routes---------------------------------------------//
+
+//Post track
+app.post('/trackrequest', async (req, res) => {
+    try{
+        const trackDoc = new Track(req.body);
+        const result = await trackDoc.save();
+        res.json(result)
+        console.log(result)
+    }catch(er) {
+        res.status(400).json({ Oops: er.message });
+    }
+
 });
 
 //----------------------------------3rd party API route----------------------------------------------//
