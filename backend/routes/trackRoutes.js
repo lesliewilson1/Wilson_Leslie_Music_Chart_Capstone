@@ -41,7 +41,7 @@ router.delete('/trackrequest/:id', async (req, res) => {
         res.json({ message: 'Requested Track deleted successfully', result });
     } catch (er) {
         console.error(er);
-        res.status(500).json({ Oops: er.message})
+        res.status(500).json({ Oops: er.message })
     }
 });
 
