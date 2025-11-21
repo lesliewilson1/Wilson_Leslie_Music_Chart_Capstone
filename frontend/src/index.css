@@ -15,6 +15,13 @@ a {
 
 }
  
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 
 /* body {
   margin: 0;
