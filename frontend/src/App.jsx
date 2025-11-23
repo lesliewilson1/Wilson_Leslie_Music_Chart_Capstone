@@ -4,8 +4,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Form from './pages/Form'
 import Tracks from './pages/Tracks'
-
 import './App.css'
+
 
 
 function App() {
@@ -33,17 +33,5 @@ export default App
 
 
 
-// const [tracks, setTracks] = useState([])
-    
-// //Connected backend
-// useEffect(() => {
-//     async function getTracks() {
-//         const response = await fetch('http://localhost:8080/trackrequest')
-//         const data = await response.json()
-//         console.log(data)
-//         setTracks(data)
-//     }
-//     getTracks()
-// }, [])
 
 
