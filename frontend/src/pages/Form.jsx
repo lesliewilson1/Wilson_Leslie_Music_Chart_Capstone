@@ -88,15 +88,18 @@ try{
                     <h2>Track Request</h2>
                     <div className="input-box">
                         <label>Track Name</label>
-                        <input type="text" className="field" placeholder='Enter track name' required />
+                        <input type="text" className="field" placeholder='Enter track name' required
+                         value={trackName} onChange={(e) => setTrackName(e.target.value)} />
                     </div>
                     <div className="input-box">
                         <label>Artist Name</label>
-                        <input type="text" className="field" placeholder='Enter artist name' required />
+                        <input type="text" className="field" placeholder='Enter artist name' required
+                        value={artistName} onChange={(e) => setArtistName(e.target.value)} />
                     </div>
                     <div className="input-box">
                         <label>Year</label>
-                        <input type="text" className="field" placeholder='Enter year name' required />
+                        <input type="text" className="field" placeholder='Enter year name' required
+                        value={year} onChange={(e) => setYear(e.target.value)} />
                     </div>
                     <button type="submit">Send</button>
                 </form>
