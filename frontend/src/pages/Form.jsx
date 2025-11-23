@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const BASE_URL = import.meta.env.VITE_BASE_URL
 
@@ -22,9 +22,18 @@ useEffect(() => {
     getTracks()
 }, [])
 
+//Post track request
     const handleSubmit = async (e) => {
         e.preventDefault();
-    }
+        const response = await fetch (`${BASE_URL}`, {
+            method: "POST",
+            body: JSON.stringify({ trackName, artistName, year }),
+            headers: {'Content-Type': 'application/json' },
+        });
+        const newTrack = await response.json();
+        setTracks([...tracks, newTrack]);
+        setTrackName(""); setArtistName(""); setYear("");
+    };
 
 
 
