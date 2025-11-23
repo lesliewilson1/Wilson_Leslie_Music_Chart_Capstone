@@ -13,6 +13,7 @@ function Form() {
 
  //Connected backend
 
+ //Get track request
 useEffect(() => {
     async function getTracks() {
         const response = await fetch(`${BASE_URL}`)
@@ -60,7 +61,22 @@ try{
 }
 };
 
+//Update track request
+async function handleUpdate(id) {
+try{
 
+
+    await fetch(`${BASE_URL}/${id}`, {
+        method: 'PUT'
+    });
+
+    const updatedTracks = tracks.map((track) => (track._id === id ? {...track, completed: !TransformStreamDefaultController.completed } : track))
+
+    setTracks(updatedTracks)
+} catch(e) {
+    console.log('Form Update Error:', e)
+}
+}
 
 
 
