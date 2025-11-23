@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 export const BASE_URL = import.meta.env.VITE_BASE_URL
 
+
 function Form() {
 
     const [trackName, setTrackName] = useState("");
@@ -9,7 +10,7 @@ function Form() {
     const [year, setYear] = useState("");
     const [tracks, setTracks] = useState([]);
 
-    
+
  //Connected backend
 
 useEffect(() => {
@@ -23,8 +24,10 @@ useEffect(() => {
 }, [])
 
 //Post track request
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+const handleSubmit = async (e) => {
+e.preventDefault();
+
+try {
         const response = await fetch (`${BASE_URL}`, {
             method: "POST",
             body: JSON.stringify({ trackName, artistName, year }),
@@ -33,7 +36,31 @@ useEffect(() => {
         const newTrack = await response.json();
         setTracks([...tracks, newTrack]);
         setTrackName(""); setArtistName(""); setYear("");
-    };
+
+    }catch(e){
+
+    console.log('Form Error:', e)
+}
+};
+
+//Delete track request
+async function handleDelete(id) {
+    
+try{
+        await fetch(`${BASE_URL}/${id}`, {
+            method: 'DELETE'
+     });
+
+        const newTracks = tracks.filter((track) => track.id !== id)
+        setTracks(newTracks)
+
+    }catch(e) {
+    console.log('Form Delete Error:', e)
+
+}
+};
+
+
 
 
 
