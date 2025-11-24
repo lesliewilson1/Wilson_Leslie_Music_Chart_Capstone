@@ -27,6 +27,7 @@ router.post('/trackrequest', async (req, res) => {
 //Update track
 router.put('/trackrequest/:id', async (req, res) => {
     try {const result = await Track.findByIdAndUpdate(req.params.id, req.body, { new: true});
+    res.json(result);
 } catch(er) {
     res.status(500).json({ Oops: er.message });
 }
