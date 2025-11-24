@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export const API_URL = import.meta.env.VITE_API_URL
 
 
-function Chart() {
+function Chart({ limit = 10 }) {
     const [tracks, setTracks] = useState([]);
     
 
@@ -12,17 +12,17 @@ function Chart() {
             const response = await fetch(`${API_URL}`)
         
             const data = await response.json();
-            const top10 = data.slice(0, 10).map((item, index) => ({
+            const topTracks = data.slice(0, limit).map((item, index) => ({
                 number: index + 1,
                 name: item.track_name,
                 artist: item.artist_name,
                 image: item.image_url,
 
         }));
-        setTracks(top10);
+        setTracks(topTracks);
         }
         getTracks();
-    }, [])
+    }, [limit])
 
 
 return (

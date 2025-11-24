@@ -5,7 +5,7 @@ function Tracks() {
     return (
         <>
         <div>
-            <Chart></Chart>
+            <Chart limit={15}></Chart>
         </div>
         </>
     )
