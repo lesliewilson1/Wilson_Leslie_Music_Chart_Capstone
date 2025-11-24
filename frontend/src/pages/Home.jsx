@@ -1,8 +1,12 @@
+import Chart from '../components/Chart'
 function Home() {
 
     return (
         <>
-        <div>Home</div>
+        <div className='home'>
+            <Chart></Chart>
+        </div>
+
         </>
     )
 }

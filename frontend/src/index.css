@@ -15,12 +15,19 @@ a {
 
 }
  
-.contact {
+.contact{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: rgb(139, 69, 160);
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 form {
