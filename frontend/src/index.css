@@ -68,6 +68,15 @@ form .field {
   margin-top: 20px;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.about-header {
+  margin-bottom: 10px;
+}
 
 /* body {
   display: flex;
