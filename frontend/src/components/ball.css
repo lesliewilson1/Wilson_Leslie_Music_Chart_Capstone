@@ -19,13 +19,6 @@
     transform: translateX(-50%);
 }
 
-/* .main .shape{
-    border-radius: 50%;
-    position: relative;
-    left: auto;
-    top: auto;
-} */
-
 .shape{
     width: 4em;
     height: 4em;

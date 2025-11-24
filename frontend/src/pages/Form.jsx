@@ -143,7 +143,7 @@ try{
                 {/* </form> */}
                 <div className="tracks-list">
                     <h2>Submitted Tracks</h2>
-                    <ul>
+                    <ul className="submitted-tracks">
                         {tracks.map(track => (
                             <li key={track._id}>
                                 {track.track} - {track.artist} ({track.year})
