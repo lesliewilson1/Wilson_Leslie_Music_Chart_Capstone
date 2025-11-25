@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { AiFillDelete } from "react-icons/ai";
+import { FaEdit } from "react-icons/fa";
+
 
 export const BASE_URL = import.meta.env.VITE_BASE_URL
 
@@ -140,7 +143,7 @@ try{
                         value={year} onChange={(e) => setYear(e.target.value)} />
                     </div>
                     <button type="submit">Send</button>
-                {/* </form> */}
+                
                 <div className="tracks-list">
                     <h2>Submitted Tracks</h2>
                     <ul className="submitted-tracks">
@@ -152,8 +155,8 @@ try{
                                     setArtistName(track.artist);
                                     setYear(track.year);
                                     setEditingId(track._id);
-                                }}>Edit</button>
-                                <button type="button" onClick={() => handleDelete(track._id)}>Delete</button>
+                                }}><FaEdit /></button>
+                                <button type="button" onClick={() => handleDelete(track._id)}><AiFillDelete /></button>
                             </li>
                         ))}
                     </ul>

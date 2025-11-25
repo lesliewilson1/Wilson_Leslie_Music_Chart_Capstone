@@ -21,6 +21,63 @@ a {
 
 }
  
+.submitted-tracks button {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submitted-tracks button:hover {
+    background: #007bff;
+    color: white;
+}
+
+
+.submitted-tracks button:first-of-type {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.submitted-tracks button:first-of-type:hover {
+    background: #28a745;
+    color: white;
+}
+
+.submitted-tracks button:last-of-type {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.submitted-tracks button:last-of-type:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.contact button[type="submit"] {
+    margin-top: 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background: #007bff;
+    color: white;
+}
+
 .contact{
   display: flex;
   justify-content: center;
