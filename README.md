@@ -1,10 +1,15 @@
-# 🎵 Color Chart 🔵🔴🟢
+# 🎵🔵🔴🟢 Color Chart 🔵🔴🟢🎵
 
+## 📎About
 A full-stack application for managing and displaying music tracks.  
 Built with **Express + MongoDB** on the backend and **React + Vite** on the frontend.
 
 ---
-# 📊 Jira Dashboard
+# 📄 The Process
+
+I tracked my progress using Jira, and created the idea on a piece of paper (you could say this was my 'wireframe')
+
+## 📊 Jira Dashboard
 
 Here’s a look at my Jira dashboard:
 
@@ -27,8 +32,14 @@ Here’s a look at my Jira dashboard:
 
 ---
 
-## 📂 Project Structure
-project-root/ ├── models/ │   └── Track.js          # Mongoose schema ├── routes/ │   └── trackRoutes.js    # Express routes ├── controllers/          # Optional controller separation ├── client/ │   ├── src/ │   │   ├── Chart.jsx     # React component for displaying tracks │   │   └── App.jsx │   └── vite.config.js ├── server.js             # Express entry point └── README.md
+## 🔗 API Routes
+
+| Method | Endpoint              | Description                  |
+|--------|-----------------------|------------------------------|
+| GET    | `/trackrequest`       | Fetch all tracks             |
+| POST   | `/trackrequest`       | Add a new track              |
+| PUT    | `/trackrequest/:id`   | Update a track by ID         |
+| DELETE | `/trackrequest/:id`   | Delete a track by ID         |
 
 ---
 ## 📄 Application Pages
@@ -53,3 +64,30 @@ This app includes four main pages:
    - Displays the **Top 15 Songs**.
    - Fetches data from the backend and shows the first 15 songs.
    - Uses the `Chart` component with `limit={15}`.
+
+---
+## 🤔 Improvements
+
+There's a few!
+
+* Incorporate music
+   * I think this goes without saying considering this is a music application after all
+* Update:
+   * background image
+   * reorganize styling
+* Articles page
+* Add a description of the mood or genre in Home
+* Refactor code
+
+
+---
+## 🪶Copyright
+
+Pull requests are welcome. Good Luck.
+
+---
+
+## 🤩Acknowledgement
+
+A special thank you to all the people who helped me along the way! You know who you are... I liked your videos on YouTube!😉
+
