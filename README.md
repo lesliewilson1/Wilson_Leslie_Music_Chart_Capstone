@@ -1,4 +1,4 @@
-# 🎵 Color Chart
+# 🎵 Color Chart 🔵🔴🟢
 
 A full-stack application for managing and displaying music tracks.  
 Built with **Express + MongoDB** on the backend and **React + Vite** on the frontend.
@@ -8,7 +8,7 @@ Built with **Express + MongoDB** on the backend and **React + Vite** on the fron
 
 Here’s a look at my Jira dashboard:
 
-![Jira_Dashboard](Wilson_Leslie_Music_Chart_Capstone/Jira_Dashboard.png)
+![Jira_Dashboard](Jira_Dashboard.png)
 
 ---
 
