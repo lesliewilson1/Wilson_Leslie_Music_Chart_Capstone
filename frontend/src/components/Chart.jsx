@@ -26,21 +26,23 @@ function Chart({ limit = 10 }) {
 
 
 return (
-    <table className="chart">
-        <thead>
-        </thead>
-        <tbody>
+    
+    <div className="chart">
+        <h1>November 2025</h1>
             {tracks.map((track) => (
-                <tr key={track.number}>
-                    <td>{track.number}</td>
-                    <td>{track.name}</td>
-                    <td>
-                        <img src={track.image} alt={track.name} width="50"></img>          
-                    </td>
-                </tr>
+                <div key={track.number} className="chart-row">
+                    <span className="number">#{track.number}</span>
+                        <img src={track.image} alt={track.name}></img>   
+                    <div>
+                        <div className="name">{track.name}</div>
+                         <div className="artist">{track.artist}</div>
+
+                    </div>       
+                </div>
             ))}
-        </tbody>
-    </table>
+       
+    </div>
+
 )
 
 }
