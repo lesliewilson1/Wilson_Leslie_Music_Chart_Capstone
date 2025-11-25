@@ -2,7 +2,8 @@
 
 ## 📎About
 A full-stack application for managing and displaying music tracks.  
-Built with **Express + MongoDB** on the backend and **React + Vite** on the frontend.
+Built with **Express + MongoDB** on the backend and **React + Vite** on the frontend. **Visit the app [here](https://color-chart-frontend.onrender.com/).**
+![Home](Images/Home.png)
 
 ---
 # 📄 The Process
@@ -13,11 +14,10 @@ I tracked my progress using Jira, and created the idea on a piece of paper (you 
 
 Here’s a look at my Jira dashboard:
 
-![Jira_Dashboard](Jira_Dashboard.png)
+![Jira_Dashboard](Images/Jira_Dashboard.png)
 
 ---
-
-## 🚀 Features
+## 🛠️ Features
 
 - **Backend (Express + MongoDB)**
   - Create new track requests (`POST /trackrequest`)
@@ -70,6 +70,7 @@ This app includes four main pages:
 
 There's a few!
 
+* THe formula needs to be updated
 * Incorporate music
    * I think this goes without saying considering this is a music application after all
 * Update:
