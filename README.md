@@ -70,7 +70,7 @@ This app includes four main pages:
 
 There's a few!
 
-* THe formula needs to be updated
+* The formula needs to be updated
 * Incorporate music
    * I think this goes without saying considering this is a music application after all
 * Update:
@@ -90,5 +90,5 @@ Pull requests are welcome. Good Luck.
 
 ## 🤩Acknowledgement
 
-A special thank you to all the people who helped me along the way! You know who you are... I liked your videos on YouTube!😉
+A special thank you to all the people who helped me along the way including the youtubers!😉
 
