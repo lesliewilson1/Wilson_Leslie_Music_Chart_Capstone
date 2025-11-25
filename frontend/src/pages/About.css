@@ -1,8 +1,10 @@
+
 .about {
     position: relative;
     min-height: 100vh;
     padding: 80px 20px 20px;
     z-index: 1;
+
 }
 
 .about-title {
@@ -21,6 +23,7 @@
     text-align: left;
     margin: 0 auto;
     z-index: 2;
+
 }
 
 .about-para {
@@ -34,5 +37,6 @@
     font-size: 30px;
     position: relative;
     z-index: 3;
+    
 }
 

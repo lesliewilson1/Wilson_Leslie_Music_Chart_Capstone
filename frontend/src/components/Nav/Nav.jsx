@@ -5,7 +5,7 @@ import './Nav.css'
 function Nav() {
     return (
         <header className="header">
-            <NavLink to="/" className="logo"><img className="image" src="ColorChart.png"></img></NavLink>
+            <NavLink to="/" className="logo"><img className="image" src="ColorChart2.png"></img></NavLink>
             <nav className="nav">
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/about">About</NavLink>
