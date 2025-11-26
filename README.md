@@ -74,7 +74,6 @@ There's a few!
 * Incorporate music
    * I think this goes without saying considering this is a music application after all
 * Update:
-   * background image
    * reorganize styling
 * Articles page
 * Add a description of the mood or genre in Home
